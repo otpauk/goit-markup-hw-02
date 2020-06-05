@@ -1,0 +1,366 @@
+/* Палітра:  */
+/* колір основного тексту: #212121 */
+/* колір вториного тексту: #757575 */
+/* білий текст та основний фон: #ffffff */
+/* чорний текст лого: #000000 */
+/* акцент: #2196F3 */
+/* колір фона футера: #2F303A */
+/* колір додаткового фону: #F5F4FA */
+/* колір контактів футера: rgba(255, 255, 255, 0.6); */
+/* колір копірайту футера: color: rgba(255, 255, 255, 0.4); */
+
+/* Оголошення кастомних CSS змінних (властивостей) */
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --logo-text-color: #000000;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --footer-bg-color: #2f303a;
+  --secondary-bg-color: #f5f4fa;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --footer-copyright-color: rgba(255, 255, 255, 0.4);
+  --font-logo: 'Raleway', sans-serif;
+  --font-text: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+
+  font-family: var(--font-text);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* Логотип */
+/* LOGO START */
+.logo {
+  color: var(--logo-text-color);
+
+  font-family: var(--font-logo);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo-left {
+  color: var(--accent-color);
+}
+
+.footer > .logo {
+  color: var(--primary-white-color);
+
+  font-size: 22px;
+  line-height: 1.18;
+}
+/* LOGO END */
+
+/* Меню навігації */
+/* MENU START */
+.site-nav .link,
+.contacts .link {
+  color: var(--primary-text-color);
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+/* Зміна кольору меню при наведенні (виділенні) */
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* Підсвічування поточної сторінки в сменю */
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.contacts .link {
+  color: var(--secondary-text-color);
+}
+
+/* Зміна кольору контакту при наведенні (виділенні) */
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--accent-color);
+}
+/* MENU END */
+
+/* Герой із зображенням на бекграунді (Header) */
+/* HERO START */
+.hero-title {
+  color: var(--primary-white-color);
+  background: rgba(47, 48, 58, 0.8);
+
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+/* HERO END */
+
+/* Особливості у підходах до роботи (Features) */
+/* FEATURES START */
+.features-title {
+  display: none;
+}
+
+.feature.title {
+  color: var(--primary-text-color);
+
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.feature.text {
+  color: var(--secondary-text-color);
+  line-height: 1.71;
+}
+/* FEATURES END */
+
+/* Перелік послуг (Чем мы занимаемся) */
+/* SERVICES START */
+.services {
+  font-weight: 700;
+  text-align: center;
+}
+
+.services-title {
+  color: var(--primary-text-color);
+
+  font-style: normal;
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+.service.title {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.17;
+  text-transform: uppercase;
+}
+
+.service.link {
+  color: var(--primary-white-color);
+  background: rgba(47, 48, 58, 0.8);
+  border-radius: 0px 0px 4px 4px;
+}
+/* SERVICES END */
+
+/* Наша команда (Our Team) */
+/* TEAM START */
+.team-title {
+  color: var(--primary-text-color);
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.team.list {
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team.list .title {
+  color: var(--primary-text-color);
+
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.team.list .text {
+  color: var(--secondary-text-color);
+
+  font-size: 16px;
+}
+
+.team-social .link {
+  color: var(--secondary-text-color);
+}
+
+.team-social .link:hover,
+.team-social .link:focus {
+  color: var(--accent-color);
+}
+/* TEAM END */
+
+/* Постійні клієнти (Our Clients) */
+/* CLIENTS START */
+.clients-title {
+  color: var(--primary-text-color);
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.client-logo:hover,
+.client-logo:focus {
+  filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
+}
+/* CLIENTS END */
+
+/* Перелік продуктів (Portfolio) */
+/* PORTFOLIO START */
+.portfolio-title {
+  display: none;
+}
+
+.products .title {
+  color: var(--primary-text-color);
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.products .text {
+  color: var(--secondary-text-color);
+
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+.products .description {
+  color: var(--primary-white-color);
+  background: rgba(33, 150, 243, 0.9);
+  border-radius: 5px 5px 0px 0px;
+
+  font-size: 18px;
+  line-height: 1.56;
+}
+/* PORTFOLIO END */
+
+/* Підвал (Footer) */
+/* FOOTER START */
+.footer {
+  background-color: var(--footer-bg-color);
+}
+
+.address {
+  color: var(--primary-white-color);
+
+  line-height: 1.71;
+}
+
+.contacts-footer .link {
+  color: var(--footer-contacts-color);
+
+  line-height: 1.71;
+}
+
+.footer-title {
+  color: var(--primary-white-color);
+
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.footer-social .link {
+  color: var(--primary-white-color);
+}
+
+.footer-social .link:hover,
+.footer-social .link:focus {
+  color: var(--accent-color);
+}
+
+/* Форма реєстрації */
+/* Стилі вікна форми */
+.input {
+  background-color: var(--footer-bg-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+/* Стилі тексту форми  */
+.input[value] {
+  color: var(--footer-contacts-color);
+
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+}
+
+.copy {
+  color: var(--footer-copyright-color);
+
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+}
+/* FOOTER END */
+
+/* Дизайн кнопок */
+/* BUTTON START */
+.button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  border-radius: 4px;
+
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+}
+
+.button.order {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  font-weight: 700;
+  align-items: center;
+  letter-spacing: 0.06em;
+}
+
+.button.reg {
+  border: 0px;
+
+  font-family: inherit;
+  font-weight: 900;
+  align-items: center;
+  letter-spacing: 0.06em;
+}
+
+.button.filter {
+  color: var(--primary-text-color);
+  background-color: var(--secondary-bg-color);
+  border: 0px;
+
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.63;
+}
+
+.button.filter:hover,
+.button.filter:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+/* BUTTON END */
