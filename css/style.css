@@ -151,16 +151,14 @@ body {
 }
 
 .service.title {
+  color: var(--primary-white-color);
+  background: rgba(47, 48, 58, 0.8);
+  border-radius: 0px 0px 4px 4px;
+
   font-style: normal;
   font-size: 14px;
   line-height: 1.17;
   text-transform: uppercase;
-}
-
-.service.link {
-  color: var(--primary-white-color);
-  background: rgba(47, 48, 58, 0.8);
-  border-radius: 0px 0px 4px 4px;
 }
 /* SERVICES END */
 
