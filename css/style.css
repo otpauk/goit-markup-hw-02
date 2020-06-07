@@ -262,7 +262,7 @@ body {
 
 .address {
   color: var(--primary-white-color);
-
+  font-style: inherit;
   line-height: 1.71;
 }
 
